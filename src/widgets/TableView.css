@@ -1,6 +1,27 @@
-v-table-view {
+vee-table-view {
     display: block;
-    width: 100px;
-    height: 100px;
-    background-color: pink;
+}
+
+vee-table-view table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+vee-table-view .Toggle {
+    float: right;
+    transition: all .35s ease-out;
+    cursor: pointer;
+}
+
+vee-table-view .Toggle::after {
+    content: "▶";
+}
+
+vee-table-view .Toggle[expanded] {
+    transform: rotate(90deg);
+}
+
+vee-table-view td:not(:empty){
+    border-top: 1px solid black;
 }
