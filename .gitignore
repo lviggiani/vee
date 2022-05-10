@@ -340,6 +340,8 @@ ASALocalRun/
 # Local History for Visual Studio
 .localhistory/
 
+.vscode/
+
 # BeatPulse healthcheck temp database
 healthchecksdb
 
