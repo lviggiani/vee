@@ -77,7 +77,6 @@ export default class TableView extends HTMLElement {
     }
 
     formatValue(value, format){
-        console.log(value);
         switch(format){
             case "percent": return `${(value * 100).toFixed(2)}%`;
             default: return value;
